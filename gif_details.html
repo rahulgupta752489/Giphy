@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+        
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #details {
+            display: grid;
+            display: block;
+            margin-left: 40%;
+
+        }
+        p {
+            text-align: center;
+            margin-right: 40%;
+        }
+
+
+
+
+        
+        #name {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            height: 45px;
+            background-color: rgb(17, 2, 2);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        #name div img {
+            height: 75px;
+            width: 200px;
+            margin-left: 55px; 
+            margin-top: -20px;
+            border-radius: 5px;
+        }
+        #name div{
+            margin-right: 100px;
+        }
+        #name input {
+           width: 350px;
+           border-radius: 5px;
+        }
+        input::placeholder {
+           font: 15px/3 sans-serif;
+        }
+        #name button {
+            width: 90px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="name">
+        <div><img src="https://itp.live/cloud/2021/12/13/uUHoXv1k-via-Giphy.jpeg" alt=""></div>
+        <label for="search"></label>
+        <input type="text" id="search" placeholder="Search all the GIFs and Stickers">
+        <button onclick="gif(); sticker()">Search</button>
+
+    <button onclick="main()">Home</button>
+    <button onclick="random()">Random</button>
+    <button onclick="categories()">Categories</button>
+    <button onclick="categories()">Gif/Sticker</button>
+    <button onclick="translates()">Translate</button>
+    <span id="sorting"></span>
+    </div>
+
+
+
+    <a href="/giphy.html">GO TO HOMEPAGE</a>
+    <div id="details"></div>
+</body>
+</html>
+<script src="/gif_details.js"></script>
